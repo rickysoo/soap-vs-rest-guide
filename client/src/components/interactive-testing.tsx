@@ -102,13 +102,20 @@ Content-Type: application/json`);
   return (
     <section id="testing" className="py-12 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-8 text-center">Interactive API Testing</h3>
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold text-slate-900 mb-4">Interactive API Testing</h3>
+          <p className="text-slate-600 max-w-3xl mx-auto">
+            Now it's time to get hands-on! Try sending real requests to see how SOAP and REST work. 
+            Don't worry - these are safe practice endpoints that won't affect anything.
+          </p>
+        </div>
         
         <div className="grid lg:grid-cols-2 gap-8">
           {/* SOAP Testing Panel */}
           <Card className="bg-white rounded-xl shadow-sm border border-slate-200">
             <div className="px-6 py-4 border-b border-slate-200 bg-blue-50">
               <h4 className="text-lg font-semibold text-blue-900">Test SOAP API</h4>
+              <p className="text-sm text-blue-700 mt-1">SOAP uses XML messages wrapped in "envelopes" - try the example below!</p>
             </div>
             <CardContent className="p-6">
               <form onSubmit={handleSOAPSubmit} className="space-y-4">
@@ -174,6 +181,7 @@ Content-Type: application/json`);
           <Card className="bg-white rounded-xl shadow-sm border border-slate-200">
             <div className="px-6 py-4 border-b border-slate-200 bg-emerald-50">
               <h4 className="text-lg font-semibold text-emerald-900">Test REST API</h4>
+              <p className="text-sm text-emerald-700 mt-1">REST uses simple HTTP methods like GET and POST - much simpler than SOAP!</p>
             </div>
             <CardContent className="p-6">
               <form onSubmit={handleRESTSubmit} className="space-y-4">

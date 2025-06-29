@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { FileText, Globe } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import { FileText, Globe, HelpCircle } from "lucide-react";
 
 export default function Comparison() {
   return (
@@ -21,19 +22,59 @@ export default function Comparison() {
               <ul className="space-y-2 text-sm text-slate-600">
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  XML-based messaging format
+                  <span className="flex items-center gap-1">
+                    XML-based messaging format
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>XML is a markup language like HTML, used to structure data in a readable format</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  Built-in error handling
+                  <span className="flex items-center gap-1">
+                    Built-in error handling
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Automatic system for catching and reporting errors when things go wrong</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  ACID compliance support
+                  <span className="flex items-center gap-1">
+                    ACID compliance support
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>ACID ensures database transactions are reliable (Atomic, Consistent, Isolated, Durable)</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  WS-Security standards
+                  <span className="flex items-center gap-1">
+                    WS-Security standards
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Built-in security features for authentication and encryption</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
               </ul>
             </CardContent>
@@ -52,19 +93,59 @@ export default function Comparison() {
               <ul className="space-y-2 text-sm text-slate-600">
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  JSON/XML data formats
+                  <span className="flex items-center gap-1">
+                    JSON/XML data formats
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>JSON is like a simple text format for data, similar to a shopping list or address book</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  Stateless operations
+                  <span className="flex items-center gap-1">
+                    Stateless operations
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Each request is independent - like ordering food where each order is separate</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  HTTP status codes
+                  <span className="flex items-center gap-1">
+                    HTTP status codes
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Standard numbers that tell you if a request worked (200 = success, 404 = not found)</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                  Lightweight and fast
+                  <span className="flex items-center gap-1">
+                    Lightweight and fast
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <HelpCircle className="w-3 h-3 text-slate-400" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Uses less data and works faster, like sending a text message vs a letter</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </span>
                 </li>
               </ul>
             </CardContent>
