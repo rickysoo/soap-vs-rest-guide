@@ -124,3 +124,109 @@ A comprehensive educational web application designed to help beginners understan
 
 ## Project Structure
 
+```
+soap-vs-rest-guide/
+├── client/                     # Frontend React application
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── ui/            # Shadcn UI components
+│   │   │   ├── api-basics.tsx  # "What is an API?" section
+│   │   │   ├── best-practices.tsx
+│   │   │   ├── code-block.tsx  # Syntax highlighting
+│   │   │   ├── code-examples.tsx
+│   │   │   ├── comparison.tsx  # SOAP vs REST comparison
+│   │   │   ├── footer.tsx
+│   │   │   ├── glossary.tsx    # Technical terms glossary
+│   │   │   ├── header.tsx
+│   │   │   ├── interactive-testing.tsx
+│   │   │   └── introduction.tsx
+│   │   ├── hooks/             # Custom React hooks
+│   │   ├── lib/               # Utility functions
+│   │   ├── pages/             # Page components
+│   │   └── main.tsx           # Application entry point
+│   └── index.html             # HTML template
+├── server/                    # Backend Express application
+│   ├── index.ts              # Server entry point
+│   ├── routes.ts             # API routes (SOAP/REST endpoints)
+│   ├── storage.ts            # Data storage interface
+│   └── vite.ts               # Development server setup
+├── shared/                   # Shared types and schemas
+│   └── schema.ts             # Zod validation schemas
+├── package.json              # Dependencies and scripts
+├── tailwind.config.ts        # Tailwind CSS configuration
+├── vite.config.ts            # Vite build configuration
+└── README.md                 # This file
+```
+
+## API Endpoints
+
+### Development/Testing Endpoints
+
+- `POST /api/soap/test` - Mock SOAP service for testing
+- `POST /api/rest/test` - Mock REST service for testing
+- `POST /api/soap/users/:id` - Sample SOAP user endpoint
+- `GET /api/rest/users/:id` - Sample REST user endpoint
+
+### Response Examples
+
+**SOAP Response (XML):**
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetUserInfoResponse>
+      <UserId>12345</UserId>
+      <Name>John Doe</Name>
+      <Email>john.doe@example.com</Email>
+    </GetUserInfoResponse>
+  </soap:Body>
+</soap:Envelope>
+```
+
+**REST Response (JSON):**
+```json
+{
+  "id": "12345",
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "role": "developer",
+  "created_at": "2024-01-15T10:30:00Z"
+}
+```
+
+## Development
+
+### Scripts
+
+- `npm run dev` - Start development server (frontend + backend)
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+
+### Environment
+
+- **Node.js**: 18+ required
+- **Port**: Application runs on port 5000
+- **Hot Reload**: Enabled for both frontend and backend
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is created for educational purposes. Feel free to use it as a learning resource.
+
+## Acknowledgments
+
+- Built with [Replit](https://replit.com) for rapid development
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide React](https://lucide.dev/)
+- Inspired by the need for beginner-friendly API education
+
+---
+
+**Happy Learning! 🚀**

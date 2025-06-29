@@ -17,7 +17,7 @@ export default function Header() {
               className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors px-3 py-2 rounded-md hover:bg-slate-50"
             >
               <Github className="w-5 h-5" />
-              <span className="hidden sm:inline text-sm">View on GitHub</span>
+              <span className="hidden sm:inline text-sm">GitHub</span>
             </a>
           </div>
         </div>
