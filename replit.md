@@ -96,6 +96,13 @@ The application follows a full-stack architecture with a React frontend and Expr
 
 ## Changelog
 - June 29, 2025. Initial setup
+- June 29, 2025. Enhanced beginner accessibility with:
+  - Added "What is an API?" section with restaurant analogy and real-world examples
+  - Added 4-step visual learning path in introduction
+  - Added tooltips for technical terms with simple explanations
+  - Added comprehensive glossary section
+  - Improved interactive testing with helpful explanations
+  - Enhanced visual design with better color coding and gradients
 
 ## User Preferences
 

@@ -5,6 +5,7 @@ import Comparison from "@/components/comparison";
 import CodeExamples from "@/components/code-examples";
 import InteractiveTesting from "@/components/interactive-testing";
 import BestPractices from "@/components/best-practices";
+import Glossary from "@/components/glossary";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <CodeExamples />
       <InteractiveTesting />
       <BestPractices />
+      <Glossary />
       <Footer />
     </div>
   );
