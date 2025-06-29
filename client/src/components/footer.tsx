@@ -1,15 +1,8 @@
 export default function Footer() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <footer className="bg-slate-800 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">SOAP vs REST Guide</h4>
             <p className="text-slate-300 text-sm">
@@ -17,49 +10,48 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-slate-300">
-              <li>
-                <button 
-                  onClick={() => scrollToSection('comparison')}
-                  className="hover:text-white transition-colors"
-                >
-                  Comparison
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('examples')}
-                  className="hover:text-white transition-colors"
-                >
-                  Code Examples
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('testing')}
-                  className="hover:text-white transition-colors"
-                >
-                  Interactive Testing
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('best-practices')}
-                  className="hover:text-white transition-colors"
-                >
-                  Best Practices
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-slate-300">
-              <li><span className="text-slate-400">SOAP Specification</span></li>
-              <li><span className="text-slate-400">REST Guidelines</span></li>
-              <li><span className="text-slate-400">API Security Guide</span></li>
-              <li><span className="text-slate-400">More Tutorials</span></li>
+              <li>
+                <a 
+                  href="https://www.w3.org/TR/soap/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  SOAP Specification (W3C)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://restfulapi.net/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  REST API Guidelines
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://owasp.org/www-project-api-security/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  API Security Guide (OWASP)
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  HTTP Methods (MDN)
+                </a>
+              </li>
             </ul>
           </div>
         </div>
