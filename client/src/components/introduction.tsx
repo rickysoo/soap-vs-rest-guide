@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { BookOpen, Code, TestTube, CheckCircle } from "lucide-react";
 
@@ -22,21 +21,6 @@ export default function Introduction() {
           <p className="text-sm text-slate-500 max-w-xl mx-auto mb-8">
             No prior experience required! This guide will take you from zero to understanding both technologies step by step.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={() => scrollToSection('comparison')}
-              className="bg-primary text-white px-6 py-3 hover:bg-blue-700 transition-colors font-medium"
-            >
-              Start Learning
-            </Button>
-            <Button 
-              variant="outline"
-              onClick={() => scrollToSection('examples')}
-              className="border border-slate-300 text-slate-700 px-6 py-3 hover:bg-slate-50 transition-colors font-medium"
-            >
-              View Examples
-            </Button>
-          </div>
         </div>
 
         {/* Learning Path */}
